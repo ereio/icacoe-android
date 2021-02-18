@@ -1,4 +1,4 @@
-package io.ere.icacoe.kotlin.views.home
+package io.ere.icacoe.kotlin.views
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -6,19 +6,22 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toolbar
+import androidx.fragment.app.Fragment
 import io.ere.icacoe.kotlin.R
+import io.ere.icacoe.kotlin.views.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
+    private val toolbar : androidx.appcompat.widget.Toolbar by lazy {
+        this.findViewById(R.id.toolbar) as androidx.appcompat.widget.Toolbar
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(findViewById(R.id.toolbar))
-
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+        setSupportActionBar(toolbar)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -6,6 +6,9 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    buildFeatures {
+        compose true
+    }
     defaultConfig {
         applicationId "io.ere.icacoe.kotlin"
         minSdkVersion 26
