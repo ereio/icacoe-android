@@ -14,8 +14,8 @@ import io.ere.icacoe.kotlin.R
  */
 class ScoreFragment : Fragment() {
 
-    private val finishButton: Button by lazy {
-        view?.findViewById(R.id.buttonContinue) as Button
+    private val restartButton: Button by lazy {
+        view?.findViewById(R.id.button_restart) as Button
     }
 
     override fun onCreateView(
@@ -29,7 +29,7 @@ class ScoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        finishButton.setOnClickListener {
+        restartButton.setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
         }
     }

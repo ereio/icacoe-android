@@ -31,13 +31,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonContinue"
+        android:id="@+id/button_continue"
         style="@style/Widget.AppCompat.Button"
         android:layout_height="wrap_content"
         android:layout_width="200dp"
-        android:layout_marginBottom="128dp"
-        android:bottomLeftRadius="16dp"
         android:text="@string/start"
+        android:layout_marginBottom="128dp"
         android:textColor="@android:color/white"
         android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,8 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="113dp"
+        android:buttonTint="@color/colorPrimary"
         android:text="@string/O"
-        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkBoxO" />
 
@@ -62,8 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginBottom="112dp"
+        android:buttonTint="@color/colorPrimary"
         android:text="@string/X"
-        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
         app:layout_constraintEnd_toStartOf="@+id/checkBoxX"
         app:layout_constraintStart_toStartOf="parent" />
 

@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
-import android.widget.EditText
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.snackbar.Snackbar
 import io.ere.icacoe.kotlin.R
 import io.ere.icacoe.kotlin.store.game.SetCurrentPlayer
 import io.ere.icacoe.kotlin.store.store
@@ -31,7 +29,7 @@ class HomeFragment : Fragment() {
     }
 
     private val continueButton: Button by lazy {
-        view?.findViewById(R.id.buttonContinue) as Button
+        view?.findViewById(R.id.button_continue) as Button
     }
     
     override fun onCreateView(
