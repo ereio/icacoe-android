@@ -45,27 +45,29 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBoxX"
+        android:id="@+id/checkBoxO"
         android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="113dp"
         android:buttonTint="@color/colorPrimary"
+        android:checked="false"
         android:text="@string/O"
         app:layout_constraintBottom_toTopOf="@+id/button_continue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxO" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxX" />
 
     <CheckBox
-        android:id="@+id/checkBoxO"
+        android:id="@+id/checkBoxX"
         android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginBottom="112dp"
         android:buttonTint="@color/colorPrimary"
+        android:checked="false"
         android:text="@string/X"
         app:layout_constraintBottom_toTopOf="@+id/button_continue"
-        app:layout_constraintEnd_toStartOf="@+id/checkBoxX"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxO"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -74,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/player_option_text"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxX"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
