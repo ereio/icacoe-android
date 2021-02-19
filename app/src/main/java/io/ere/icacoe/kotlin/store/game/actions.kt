@@ -4,6 +4,7 @@ import org.rekotlin.Action
 
 class ToggleCurrentPlayer() : Action
 data class SetCurrentPlayer(val currentPlayer: String) : Action
-data class SetWinner(val winningPlayer: String) : Action
+class CheckWinner : Action
+data class SetWinner(val winner: String) : Action
 
 class ResetGame : Action

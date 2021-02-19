@@ -14,7 +14,7 @@ fun gameReducer(action: Action, state: GameState = GameState()): GameState {
             return state.copy(currentPlayer = if(state.currentPlayer == "X") "O" else "X")
         }
         is SetWinner -> {
-            return state.copy(winner = action.winningPlayer)
+            return state.copy(winner = action.winner)
         }
         is ResetGame -> {
             return GameState();
